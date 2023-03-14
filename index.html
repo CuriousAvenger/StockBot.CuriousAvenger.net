@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL68HBWVDY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YL68HBWVDY');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>StockBot - CuriousAvenger</title>
@@ -81,88 +90,92 @@
                       <div class="row">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">NIO</h3>
-                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                            <h3 class="mb-0" id="changePriceOne"></h3>
+                            <p class="ms-2 mb-0 font-weight-medium" id="changePercentOne"></p>
                           </div>
                         </div>
                         <div class="col-3">
-                          <div class="icon icon-box-success ">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          <div class="icon" id="changeArrowColorOne">
+                            <span class="mdi icon-item" id="changeArrowOne"></span>
                           </div>
                         </div>
                       </div>
-                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                      <h6 class="text-muted font-weight-normal" id="changeNameOne"></h6>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">NIO</h3>
-                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                            <h3 class="mb-0" id="changePriceTwo"></h3>
+                            <p class="ms-2 mb-0 font-weight-medium" id="changePercentTwo"></p>
                           </div>
                         </div>
                         <div class="col-3">
-                          <div class="icon icon-box-success ">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          <div class="icon" id="changeArrowColorTwo">
+                            <span class="mdi icon-item" id="changeArrowTwo"></span>
                           </div>
                         </div>
                       </div>
-                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                      <h6 class="text-muted font-weight-normal" id="changeNameTwo"></h6>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">NIO</h3>
-                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                            <h3 class="mb-0" id="changePriceThree"></h3>
+                            <p class="ms-2 mb-0 font-weight-medium" id="changePercentThree"></p>
                           </div>
                         </div>
                         <div class="col-3">
-                          <div class="icon icon-box-success ">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          <div class="icon" id="changeArrowColorThree">
+                            <span class="mdi icon-item" id="changeArrowThree"></span>
                           </div>
                         </div>
                       </div>
-                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                      <h6 class="text-muted font-weight-normal" id="changeNameThree"></h6>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">NIO</h3>
-                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                            <h3 class="mb-0" id="changePriceFour"></h3>
+                            <p class="ms-2 mb-0 font-weight-medium" id="changePercentFour"></p>
                           </div>
                         </div>
                         <div class="col-3">
-                          <div class="icon icon-box-success ">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          <div class="icon" id="changeArrowColorFour">
+                            <span class="mdi icon-item" id="changeArrowFour"></span>
                           </div>
                         </div>
                       </div>
-                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                      <h6 class="text-muted font-weight-normal" id="changeNameFour"></h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <!-- this is where the thingy comes -->
-                <div class="col-md-6 grid-margin stretch-card">
+                <div class="col-md-5 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Choose Model Specification: </h4>
-                      <form class="forms-sample" action="https://formsubmit.co/CuriousAvenger10@gmail.com" method="POST">
+                      <form class="forms-sample" action="https://formsubmit.co/CuriousAvenger10@gmail.com"
+                        method="POST">
                         <div class="form-group">
                           <label for="exampleInputUsername1"> Email Address: </label>
                           <input type="email" class="form-control" placeholder="johndoe@john.com" name="Email_Address">
@@ -188,13 +201,21 @@
                   </div>
                 </div>
                 <!-- this is where the thingy ends -->
-                <div class="col-lg-6 grid-margin stretch-card">
+                <div class="col-lg-7 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">How to Choose Model Specification: </h4>
                       <div class="table-responsive">
                         <table class="table">
                           <tbody>
+                            <tr>
+                              <td>Email Address:</td>
+                              <td>Please enter your email address in order to recieve the results reguarding your stock
+                                information. Note: it may take around 1-2 hours for the model to train for your
+                                specified
+                                stock, so patience is much appreciated. The results should come as an email.
+                              </td>
+                            </tr>
                             <tr>
                               <td>Company Ticker:</td>
                               <td>A ticker symbol or stock symbol is an abbreviation used to identify publicly traded
@@ -307,6 +328,7 @@
   <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
   <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
+  <script src="assets/js/updateStocks.js"></script>
   <script src="assets/js/off-canvas.js"></script>
   <script src="assets/js/hoverable-collapse.js"></script>
   <script src="assets/js/misc.js"></script>
