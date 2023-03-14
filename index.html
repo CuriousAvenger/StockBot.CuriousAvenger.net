@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>StockBot - CuriousAvenger</title>
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+
+  <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- sidebar area -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item profile">
+          <div class="profile-desc">
+            <div class="profile-pic">
+              <div class="count-indicator">
+                <img class="img-xs rounded-circle " src="assets/images/favicon.ico" alt="">
+                <span class="count bg-success"></span>
+              </div>
+              <div class="profile-name">
+                <h5 class="mb-0 font-weight-normal">CuriousAvenger</h5>
+                <span>© Sai Praneth</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item nav-category">
+          <span class="nav-link">Navigation</span>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="index.html">
+            <span class="menu-icon">
+              <i class="mdi mdi-speedometer"></i>
+            </span>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="stocks.html">
+            <span class="menu-icon">
+              <i class="mdi mdi-chart-areaspline"></i>
+            </span>
+            <span class="menu-title">Stock Info</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="license.html">
+            <span class="menu-icon">
+              <i class="mdi mdi-file-document-box"></i>
+            </span>
+            <span class="menu-title">GNU License</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- sidebar area -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="content-wrapper">
+            <div id="loading">
+              <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+              </div>
+            </div>
+            <div id="content">
+              <div class="row">
+                <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">NIO</h3>
+                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">NIO</h3>
+                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">NIO</h3>
+                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">NIO</h3>
+                            <p class="text-success ms-2 mb-0 font-weight-medium">+1.33%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">NIO Inc.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- this is where the thingy comes -->
+                <div class="col-md-5 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Choose Model Specification: </h4>
+                      <form class="forms-sample" action="#" method="POST">
+                        <div class="form-group">
+                          <label for="exampleInputUsername1"> Company's Ticker:</label>
+                          <input type="text" class="form-control" placeholder="Ex: NIO" name="Stock_Ticker">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputMobile">Predict Into Future:</label>
+                          <input type="number" class="form-control" placeholder="Ex: 10 Days" name="Output_Pred">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputMobile">Predict Using: (Optional)</label>
+                          <input type="number" class="form-control" placeholder="Ex: 60 Days" name="Input_Pred">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary me-2" onclick="loading();">Submit</button>
+                        <button class="btn btn-dark">Cancel</button>
+                        <br>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- this is where the thingy ends -->
+                <div class="col-lg-7 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">How to Choose Model Specification: </h4>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td>Company Ticker:</td>
+                              <td>A ticker symbol or stock symbol is an abbreviation used to identify publicly traded
+                                shares of a particular stock on a particular stock market. Examples being AMZN for
+                                Amazon, TSLA for Tesla, FB for Metaverse, MSFT for Microsoft
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Perdict Into The Future:</td>
+                              <td>This is a required field, which inputs the number
+                                of days you want to predict into the future. So, if you input 1, then the model
+                                will predict 1 days ahead - tomorrow. However, the model's accuracy starts falling
+                                the more and more days you predict into the future.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Predict Using:</td>
+                              <td>This is an optional field - aka a hyperparameter - which
+                                decides how many days of information should the model use to predict given days into
+                                the future. Meaning, if you choose 1, then the model is going to use yesterdays data
+                                to predict into the future. Ideally the model defaults to 1, which is best
+                                for short terms results, but for long term accuracies, stick to 60.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Visitors by Countries</h4>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-us"></i>
+                                  </td>
+                                  <td>USA</td>
+                                  <td class="text-right"> 1500 </td>
+                                  <td class="text-right font-weight-medium"> 56.35% </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-de"></i>
+                                  </td>
+                                  <td>Germany</td>
+                                  <td class="text-right"> 800 </td>
+                                  <td class="text-right font-weight-medium"> 33.25% </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-au"></i>
+                                  </td>
+                                  <td>Australia</td>
+                                  <td class="text-right"> 760 </td>
+                                  <td class="text-right font-weight-medium"> 15.45% </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-gb"></i>
+                                  </td>
+                                  <td>United Kingdom</td>
+                                  <td class="text-right"> 450 </td>
+                                  <td class="text-right font-weight-medium"> 25.00% </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-ro"></i>
+                                  </td>
+                                  <td>Romania</td>
+                                  <td class="text-right"> 620 </td>
+                                  <td class="text-right font-weight-medium"> 10.25% </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <i class="flag-icon flag-icon-br"></i>
+                                  </td>
+                                  <td>Brasil</td>
+                                  <td class="text-right"> 230 </td>
+                                  <td class="text-right font-weight-medium"> 75.00% </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="col-md-7">
+                          <div id="audience-map" class="vector-map"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
