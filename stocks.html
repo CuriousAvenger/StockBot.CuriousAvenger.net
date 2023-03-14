@@ -5,7 +5,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL68HBWVDY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-YL68HBWVDY');
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/favicon.ico" />
 </head>
+
 <body>
   <div class="container-scroller">
     <!-- sidebar area -->
@@ -72,7 +73,8 @@
     <div class="container-fluid page-body-wrapper">
       <nav class="navbar p-0 fixed-top d-flex flex-row">
         <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+            data-toggle="offcanvas">
             <span class="mdi mdi-format-line-spacing"></span>
           </button>
         </div>
@@ -86,19 +88,151 @@
               </div>
             </div>
             <div id="content">
-              
+              <div class="row">
+                <div class="col-lg-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title" id="SymbolName"></h4>
+                      <p class="card-description" id="SectorExchange"></p>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <tbody>
+                            <tr>
+                              <td> Fiscal Year End </td>
+                              <td id="FiscalYearEnd"> </td>
+                              <td> Latest Quarter </td>
+                              <td id="LatestQuarter"></td>
+                            </tr>
+                            <tr>
+                              <td> Market Capitalization </td>
+                              <td id="MarketCapitalization"> </td>
+                              <td> PE Ratio </td>
+                              <td id="PERatio"></td>
+                            </tr>
+                            <tr>
+                              <td> PEG Ratio </td>
+                              <td id="PEGRatio"></td>
+                              <td> Book Value </td>
+                              <td id="BookValue"></td>
+                            </tr>
+                            <tr>
+                              <td> Dividend Per Share </td>
+                              <td id="DividendPerShare"></td>
+                              <td> Divident Yield </td>
+                              <td id="DividendYield"></td>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td> EPS Value </td>
+                              <td id="EPS"></td>
+                              <td> Revenue Per Share </td>
+                              <td id="RevenuePerShareTTM"></td>
+                            </tr>
+                            <tr>
+                              <td> Profit Margin</td>
+                              <td id="ProfitMargin"></td>
+                              <td> Operating Margin</td>
+                              <td id="OperatingMarginTTM"></td>
+                            </tr>
+                            <tr>
+                              <td> Return On Assets</td>
+                              <td id="ReturnOnAssetsTTM"></td>
+                              <td> Return On Equity</td>
+                              <td id="ReturnOnEquityTTM"></td>
+                            </tr>
+                            <tr>
+                              <td> Revenue</td>
+                              <td id="RevenueTTM"></td>
+                              <td> Gross Profit </td>
+                              <td id="GrossProfitTTM"> </td>
+                            </tr>
+                            <tr>
+                              <td> Analyst Target Price </td>
+                              <td id="AnalystTargetPrice"></td>
+                              <td> EBITDA </td>
+                              <td id="EBITDA"> </td>
+                            </tr>
+                            <tr>
+                              <td> Trailing PE</td>
+                              <td id="TrailingPE"></td>
+                              <td> Forward PE</td>
+                              <td id="ForwardPE"></td>
+                            </tr>
+                            <tr>
+                              <td> Price To Sales Ratio </td>
+                              <td id="PriceToSalesRatioTTM"></td>
+                              <td> Price To Book Ratio </td>
+                              <td id="PriceToBookRatio"> </td>
+                            </tr>
+                            <tr>
+                              <td> EV To Revenue</td>
+                              </td>
+                              <td id="EVToRevenue"></td>
+                              <td> EV To EBITDA </td>
+                              <td id="EVToEBITDA"> </td>
+                            </tr>
+                            <tr>
+                              <td> BETA </td>
+                              <td id="Beta"> </td>
+                              <td> Divident Date</td>
+                              <td id="DividendDate"> </td>
+                            </tr>
+                            <tr>
+                              <td> 52 Week High</td>
+                              <td id="52WeekHigh"></td>
+                              <td> 52 Week Low </td>
+                              <td id="52WeekLow"> </td>
+                            </tr>
+                            <tr>
+                              <td> 50 Day Moving Average </td>
+                              <td id="50DayMovingAverage"></td>
+                              <td> 200 Day Moving Average</td>
+                              <td id="200DayMovingAverage"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="col-6 grid-margin ">
+                  <div class="col-lg-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Current Values</h4>
+                        <canvas id="lineChart" style="height:250px"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">50 Day Moving Average</h4>
+                        <canvas id="lineChart2" style="height:250px"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="assets/js/getStockInfo.js"></script>
   <script src="assets/vendors/js/vendor.bundle.base.js"></script>
   <script src="assets/js/off-canvas.js"></script>
   <script src="assets/js/hoverable-collapse.js"></script>
   <script src="assets/js/misc.js"></script>
   <script src="assets/js/settings.js"></script>
   <script src="assets/js/todolist.js"></script>
+  <script src="assets/js/stocksChart.js"></script>
 </body>
 
 </html>
