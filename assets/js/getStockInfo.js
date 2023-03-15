@@ -1,5 +1,11 @@
+let tickerSymbol = prompt("Enter Ticker Symbol: ");
+console.log(tickerSymbol);
+if (tickerSymbol == null) {
+  tickerSymbol = "IBM";
+}
+
 async function getStockInfo() {
-    const url = 'https://www.alphavantage.co/query?function=OVERVIEW&symbol=IBM&apikey=demo';
+    const url = 'https://www.alphavantage.co/query?function=OVERVIEW&symbol='+tickerSymbol.toUpperCase()+'&apikey=demo';
     const response = await fetch(url);
     const text = await response.text();
     const obj = JSON.parse(text)
@@ -40,10 +46,6 @@ async function getStockInfo() {
     document.getElementById("50DayMovingAverage").innerHTML = obj["50DayMovingAverage"];
     document.getElementById("200DayMovingAverage").innerHTML = obj["200DayMovingAverage"];
     document.getElementById("DividendDate").innerHTML = obj["DividendDate"];
-
-
-
-    
   }
 
 getStockInfo();
